@@ -1,0 +1,12 @@
+name: main-branch
+on: 
+    push:
+        branches:
+            - main
+
+jobs:
+    Echo-main:
+        runs-on: ubintu-latest
+        steps:
+            - name: Echo main
+              run: echo 'branch main'

@@ -1,0 +1,12 @@
+name: not-main-branch
+on: 
+  push:
+    branches-ignore:   
+    - 'main'
+
+jobs:
+    Echo-main:
+        runs-on: ubintu-latest
+        steps:
+            - name: Echo not-main
+              run: echo ${{GITHUB_REF_NAME}}
