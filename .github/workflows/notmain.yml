@@ -6,7 +6,7 @@ on:
 
 jobs:
     Echo-main:
-        runs-on: ubintu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Echo not-main
               run: "echo branch name: $GITHUB_REF_NAME"
