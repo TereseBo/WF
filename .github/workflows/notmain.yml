@@ -9,4 +9,4 @@ jobs:
         runs-on: ubintu-latest
         steps:
             - name: Echo not-main
-              run: echo ${{github.ref.name}}
+              run: "echo branch name: $GITHUB_REF_NAME"
